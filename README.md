@@ -1,1 +1,1 @@
-# NeuronEZ - test
+# NRN-EZ
