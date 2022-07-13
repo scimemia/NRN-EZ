@@ -24,8 +24,11 @@ The Sample neurons folder contains an .swc file, a description of the settings u
 NRN-EZ requires the following languages and libraries:
 
 •	Python 3.6.9
+
 •	PyQt 5.10.1
+
 •	PyQtGraph 0.11.0
+
 
 Detailed instructions for software installation are provided in the Installation file in the Instructions folder. All required package files are in the Package files folder.
 
