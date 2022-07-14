@@ -30,7 +30,9 @@ NRN-EZ requires the following languages and libraries:
 •	PyQtGraph 0.11.0
 
 Installation instructions for Linux: download the Linux zip file and, from the command window, run a bash command for the install.sh file, in the NRNEZ_Installation_Media_Ubuntu folder
+
 Installation instructions for Windows: download the Win zip file and double click on the .bat file.
+
 Installation instructions for Mac OS: download the Mac zip file and, from the command window, run a bash command for the install.sh file, in the NRNEZ_Installation_Media_Mac folder
 
 **TESTS**
