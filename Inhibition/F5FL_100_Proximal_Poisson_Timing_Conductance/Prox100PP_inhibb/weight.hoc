@@ -1,0 +1,105 @@
+//This file was generated using NRN-EZ
+//Reference: 
+//Creation time: 11:37:36  02/24/2021
+//Version: 1.0.5
+objref mloc, mtime, mweight, mwvars
+
+mloc = newMat("./Prox100PP_inhibb/syn_loc.dat")
+mtime = newMat("./Prox100PP_inhibb/syn_time.dat")
+mweight = newMat("./Prox100PP_inhibb/syn_weight.dat")
+mwvars = newMat("./Prox100PP_inhibb/vars_weight.dat")
+
+nsyn=mloc.nrow
+
+objref rsyn_w_1[nsyn][mweight.ncol], nc_w_1[nsyn][mweight.ncol]
+
+objref s_w_1[nsyn]
+
+
+for n = 0, nsyn-1 {
+    dist = mloc.x[n][1]
+//~~~SOMA~~~//
+    if (mloc.x[n][0] == 0) {
+       soma[dist] {
+
+           s_w_1[n] = new NetStims(rel)
+           s_w_1[n].interval=0  //time between spikes
+           s_w_1[n].number = 1   ///number of spikes
+           s_w_1[n].start=mtime.x[n][0]   ///start of first spike
+           s_w_1[n].noise=0
+
+           for k = 0, mweight.ncol-1 {
+           	rsyn_w_1[n][k] = new Exp2Syn(rel)
+           	rsyn_w_1[n][k].e = mwvars.x[k][0]
+           	rsyn_w_1[n][k].tau1 = mwvars.x[k][1]
+           	rsyn_w_1[n][k].tau2 = mwvars.x[k][2]
+           	nc_w_1[n][k] = new NetCon(s_w_1[n],rsyn_w_1[n][k],0,0,mweight.x[n][k])  //source, target, threshold, delay, weight
+		}
+	   }
+   	}
+//~~~SOMA~~~//
+//~~~APICAL~~~//
+    if (mloc.x[n][0] == 3) {
+       apical[dist] {
+
+           s_w_1[n] = new NetStims(rel)
+           s_w_1[n].interval=0  //time between spikes
+           s_w_1[n].number = 1   ///number of spikes
+           s_w_1[n].start=mtime.x[n][0]   ///start of first spike
+           s_w_1[n].noise=0
+
+           for k = 0, mweight.ncol-1 {
+           	rsyn_w_1[n][k] = new Exp2Syn(rel)
+           	rsyn_w_1[n][k].e = mwvars.x[k][0]
+           	rsyn_w_1[n][k].tau1 = mwvars.x[k][1]
+           	rsyn_w_1[n][k].tau2 = mwvars.x[k][2]
+           	nc_w_1[n][k] = new NetCon(s_w_1[n],rsyn_w_1[n][k],0,0,mweight.x[n][k])  //source, target, threshold, delay, weight
+		}
+	  
+       	   }
+       }
+//~~~APICAL~~~//
+//~~~BASAL~~~//
+    if (mloc.x[n][0] == 2) {
+       basal[dist] {
+
+           s_w_1[n] = new NetStims(rel)
+           s_w_1[n].interval=0  //time between spikes
+           s_w_1[n].number = 1   ///number of spikes
+           s_w_1[n].start=mtime.x[n][0]   ///start of first spike
+           s_w_1[n].noise=0
+
+           for k = 0, mweight.ncol-1 {
+           	rsyn_w_1[n][k] = new Exp2Syn(rel)
+           	rsyn_w_1[n][k].e = mwvars.x[k][0]
+           	rsyn_w_1[n][k].tau1 = mwvars.x[k][1]
+           	rsyn_w_1[n][k].tau2 = mwvars.x[k][2]
+           	nc_w_1[n][k] = new NetCon(s_w_1[n],rsyn_w_1[n][k],0,0,mweight.x[n][k])  //source, target, threshold, delay, weight
+		}
+	   }
+       }
+//~~~BASAL~~~//
+//~~~AXON~~~//
+    if (mloc.x[n][0] == 1) {
+       axon[dist] {
+
+           s_w_1[n] = new NetStims(rel)
+           s_w_1[n].interval=0  //time between spikes
+           s_w_1[n].number = 1   ///number of spikes
+           s_w_1[n].start=mtime.x[n][0]   ///start of first spike
+           s_w_1[n].noise=0
+
+           for k = 0, mweight.ncol-1 {
+           	rsyn_w_1[n][k] = new Exp2Syn(rel)
+           	rsyn_w_1[n][k].e = mwvars.x[k][0]
+           	rsyn_w_1[n][k].tau1 = mwvars.x[k][1]
+           	rsyn_w_1[n][k].tau2 = mwvars.x[k][2]
+           	nc_w_1[n][k] = new NetCon(s_w_1[n],rsyn_w_1[n][k],0,0,mweight.x[n][k])  //source, target, threshold, delay, weight
+		}
+	   }
+       }
+//~~~AXON~~~//
+}
+
+
+
