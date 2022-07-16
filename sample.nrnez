@@ -1,0 +1,61 @@
+{
+     "swc_path": "/home/annalisa/Desktop",
+     "swc": "CA1PC",
+     "output_path": "/home/annalisa/Desktop",
+     "runs": "10",
+
+    "experiment" :
+    [
+      {
+	"tag" : "AMPA",
+	"inputs" : "5",
+	"soma" : "f",
+	"axon" : "f",
+	"basal" : "t",
+	"apical" : "t",
+	"color" : "red"
+      }
+    ],
+     "location" :
+    [ 
+      {
+	"type" : "u",
+	"section" : "b",
+	"segment" : "4",
+	"distance" : "10",
+	"mean" : "5",
+	"sd" : "2"
+      }
+    ],
+     "time" : 
+    [
+      {
+	"type" : "p",
+	"onset" : "3",
+	"interval" : "2",
+	"mean" : "5",
+	"sd" : "5"
+      }
+    ],
+     "weight" :  
+    [
+      {
+	"module" : "s",
+	"type" : "s",
+	"name" : "input1",
+	"current" : "",
+	"duration_type" : "",
+	"duration" : "",
+	"duration_mean" : "",
+	"duration_sd" : "",
+	"weight" : "5",
+	"e" : "0",
+	"tau1" : "2",
+	"tau2" : "10",
+	"mean" : "6",
+	"sd" : "7",
+	"custom_path" : "",
+	"custom" : ""
+      }
+    ]  
+}
