@@ -23,7 +23,7 @@ The Sample neurons folder contains an .swc file, a description of the settings u
 
 NRN-EZ was built with PyInstaller 3.6, and requires the following languages and libraries:
 
-•	Python 3.6.9 or higher (currently up to 3.10)
+•	Python 3.6.9 and higher (currently up to 3.10)
 
 •	PyQt 5.10.1
 
