@@ -13,6 +13,7 @@ from gui import window
 import config
 from errorLogger import *
 import platform
+import os
 ############ OS specific code goes here##############
 
 ############
