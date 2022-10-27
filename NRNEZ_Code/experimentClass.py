@@ -1,7 +1,7 @@
 ###################################################################
 ####
-#### Version: 1.1.4
-#### Date: 10/10/2022
+#### Version: 1.1.5
+#### Date: 10/26/2022
 #### Description: This file contains the class definition of the experiment object
 #### Author: Evan Cobb
 ####
@@ -117,7 +117,7 @@ class experimentObject:
                 self.customWriter(self.path, synIn.generate(int(self.inputs)), synIn.name)
                 self.custom.append(synIn.name)
                 try:
-                    shutil.copy(synIn.path, './incl/tmp/')
+                    shutil.copy(synIn.path, gv.incPath + 'tmp/')
                 except Exception as ex:
                     newMsgBox('Error copying tmp folder', str(ex))
                     logErr(str(ex), 'experimentClass :: generate()')
@@ -229,7 +229,7 @@ class experimentObject:
         try:
             #####create weight hoc file
             if(self.weightCount):
-                fin = open("./incl/weight.tmplt", "r")
+                fin = open(gv.incPath + "weight.tmplt", "r")
                 fout = open(self.path + "/weight.hoc", "w")
                 bufIn = fin.read()
                 bufIn = self.replaceVar(bufIn, '//~~~STIMVAR~~~//', 'w_' + str(uid))
@@ -248,7 +248,7 @@ class experimentObject:
                 self.hocNames.append('weight.hoc')
             ###create current hoc file
             if(self.currentCount):
-                fin = open("./incl/current.tmplt", "r")
+                fin = open(gv.incPath + "current.tmplt", "r")
                 fout = open(self.path + "/current.hoc", "w")
                 bufIn = fin.read()
                 bufIn = self.replaceVar(bufIn, '//~~~STIMVAR~~~//', 'cur_' + str(uid))
@@ -267,7 +267,7 @@ class experimentObject:
             ###create custom hoc files
             customID = 1
             for c in self.custom:
-                fin = open("./incl/custom.tmplt", "r")
+                fin = open(gv.incPath + "custom.tmplt", "r")
                 fout = open(self.path + '/' + c + '.hoc', 'w')
                 bufIn = fin.read()
                 bufIn = self.replaceVar(bufIn, '//~~~STIMVAR~~~//', 'cust_' + str(uid) + '_' + str(customID))

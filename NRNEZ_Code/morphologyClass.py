@@ -1,7 +1,7 @@
 ###################################################################
 ####
-#### Version: 1.1.4
-#### Date: 10/10/2022
+#### Version: 1.1.5
+#### Date: 10/26/2022
 #### Description: This file contains the class definitions for the Morphology object, and the nPart object
 #### Author: Evan Cobb
 ####
@@ -305,12 +305,12 @@ class morphologyClass():
                     fout.write('xopen("./' + ex.name + '/' + hoc + '")\n')
                 del ex.hocNames[:]
             ##copy files
-            shutil.copy('./incl/headers.hoc', path)
-            shutil.copy('./incl/mods/netstims.mod', path)
-            files = os.listdir('./incl/tmp') 
+            shutil.copy(gv.incPath + 'headers.hoc', path)
+            shutil.copy(gv.incPath + 'mods/netstims.mod', path)
+            files = os.listdir(gv.incPath + 'tmp') 
             for f in files:
-                if(os.path.isfile('./incl/tmp/' + f)):
-                    shutil.copy('./incl/tmp/' + f, path)
+                if(os.path.isfile(gv.incPath + 'tmp/' + f)):
+                    shutil.copy(gv.incPath + 'tmp/' + f, path)
             ##clean up
             ##shutil.rmtree('./incl/tmp')
         ###raise exception here?    

@@ -1,7 +1,7 @@
 ###################################################################
 ####
-#### Version: 1.1.4
-#### Date: 10/10/2022
+#### Version: 1.1.5
+#### Date: 10/26/2022
 #### Description: This file creates the GUI for NRN-EZ.
 #### Author: Evan Cobb
 ####
@@ -29,7 +29,7 @@ def window():
     w.setGeometry(100,100,1078,525)
     w.setMinimumSize(1200, 525)
     w.setWindowTitle("NRN-EZ")
-    w.setWindowIcon(QIcon('./incl/nrnez.png'))
+    w.setWindowIcon(QIcon(gv.incPath + 'nrnez.png'))
     
     windowLayout = QHBoxLayout(w)
     windowLayout.setContentsMargins(0,0,0,0)

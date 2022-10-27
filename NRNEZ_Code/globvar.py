@@ -1,13 +1,14 @@
 ###################################################################
 ####
-#### Version: 1.1.4
-#### Date: 10/10/2022
+#### Version: 1.1.5
+#### Date: 10/26/2022
 #### Description: This file contains global variables used throughout the application.
 #### Author: Evan Cobb
 ####
 ###################################################################
  
 from PyQt5.QtGui import QColor
+import os
 
 graphWin = None ##window used to display the morphology
 morphObj = None ## object that holds the loaded morphology
@@ -31,11 +32,12 @@ runFile = None  ##holds runtime log file object
 errorFile = None  ##holds error log file object
 debugFile = None  ##holds debug log file object
 #### meta data
-version = '1.1.4' ##current version as a string
+version = '1.1.5' ##current version as a string
 vMajor = 1  ##current major version as an int
 vMinor = 1  ##current minor version as an int
-vBuild = 4  ##current build version as an int
+vBuild = 5  ##current build version as an int
 aboutText = ''  ##about text
 refText = ''  ##reference text
 configErr = ''  ##holds error string for configuration menu
 nrnezPath = '' ##.nrnez file path from config file.
+incPath = os.path.dirname(os.path.realpath(__file__)) + '/incl/'

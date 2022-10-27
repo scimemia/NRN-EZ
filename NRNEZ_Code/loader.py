@@ -1,7 +1,7 @@
 ###################################################################  
 ####                                                           
-#### Version: 1.1.4
-#### Date: 10/10/2022         
+#### Version: 1.1.5
+#### Date: 10/26/2022         
 #### Description: This file contains the functions used for loading .nrnez files
 #### Author: Evan Cobb                
 ####                    

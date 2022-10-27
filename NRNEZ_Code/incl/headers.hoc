@@ -1,4 +1,4 @@
-//Version 1.1.4
+//Version 1.1.5
 load_file("nrngui.hoc")
 cvode_active(1)
 

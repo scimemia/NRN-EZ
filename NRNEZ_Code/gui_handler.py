@@ -1,7 +1,7 @@
 ###################################################################
 ####
-#### Version: 1.1.4
-#### Date: 10/10/2022
+#### Version: 1.1.5
+#### Date: 10/26/2022
 #### Description: This file contains handler functions for all UI elements
 #### Author: Evan Cobb
 ####
@@ -612,14 +612,15 @@ def generateButton(parent):
     outPath = parent.findChild(QLineEdit, "Output File").text()
     allPath = outPath + "/nrnez_" + curTime.strftime("%Y_%m_%d_%H_%M_%S")
     cwd = os.getcwd()
+    tmp = os.path.dirname(os.path.realpath(__file__)) + '/incl/tmp'
     if not createDir(allPath):
         return
     
     ###something went wrong previously so cleanup the tmp dir and recreate
-    if os.path.isdir('./incl/tmp'):
-        rmtree('./incl/tmp')
+    if os.path.isdir(tmp):
+        rmtree(tmp)
         
-    if not createDir('./incl/tmp'):
+    if not createDir(tmp):
         return
 
     gv.morphObj.clearInputs()
@@ -709,7 +710,7 @@ def generateButton(parent):
             return
 
     ##clean up
-    rmtree('./incl/tmp')
+    rmtree(tmp)
     ######Need to clear UI elements set in the objects before we pickle, only need one pickle    
     for exp in gv.experiments:
         exp.clearElements()

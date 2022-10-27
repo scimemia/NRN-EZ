@@ -1,3 +1,6 @@
+10/26/2022
+-Fixed relative path references to absolutee paths. 
+
 10/10/2022 Version 1.1.4:
 -Redid GUI to a relative layout, resizing keeps elements in place. 
 -Changed title bar to 'NRN-EZ'

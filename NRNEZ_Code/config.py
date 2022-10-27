@@ -1,7 +1,7 @@
 ###################################################################
 ####
-#### Version: 1.1.4
-#### Date: 10/10/2022
+#### Version: 1.1.5
+#### Date: 10/26/2022
 #### Description: This file contains the code for the configuration menu of Neuron EZ. The current config menu contains sections for about, reference, and an option to set debug mode.
 #### Author: Evan Cobb
 ####
@@ -15,6 +15,7 @@ import globvar as gv
 from PyQt5.QtWidgets import *
 from PyQt5.QtGui import *
 
+jsonPath = gv.incPath + 'config.json'
 
 ##Display config menu
 def window():
@@ -70,10 +71,10 @@ def load(about, ref, debug, nrnez):
     fin = None
     try:
         ##if the config file doesn't exist for some reason, we still want to run so we can create it
-        if(not os.path.exists('./incl/config.json')):
+        if(not os.path.exists(jsonPath)):
             ret = True
         else:
-            fin = open('./incl/config.json', 'r')
+            fin = open(jsonPath, 'r')
             data = json.loads(fin.read())
             isValid = validate(data)
             if(isValid):
@@ -100,7 +101,7 @@ def saveClicked(w, about, ref, debug, nrnez):
             'checksum' : cs
     }
     try:
-        fout = open('./incl/config.json', 'w')
+        fout = open(jsonPath, 'w')
         fout.write(json.dumps(data))
     except Exception as ex:
         print('Error saving the configuration file: ' + str(ex))
@@ -137,11 +138,11 @@ def nrnezLoad(w, nrnez):
 def loadValues():
     fin = None
     try:                                                                                 
-        if(not os.path.exists('./incl/config.json')):
+        if(not os.path.exists(jsonPath)):
             gv.configErr = 'Error opening configuration file. File does not exist'
             return False
         else:
-            fin = open('./incl/config.json', 'r')
+            fin = open(jsonPath, 'r')
             data = json.loads(fin.read())
             isValid = validate(data)
             if(isValid):

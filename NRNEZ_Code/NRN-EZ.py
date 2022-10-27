@@ -1,7 +1,7 @@
 ###################################################################
 ####
-#### Version: 1.1.4
-#### Date: 10/10/2022
+#### Version: 1.1.5
+#### Date: 10/26/2022
 #### Description: This file contains the starting point of the application and handles command line arguments, as well as OS specific code. 
 #### Author: Evan Cobb
 ####
@@ -13,16 +13,15 @@ from gui import window
 import config
 from errorLogger import *
 import platform
-
 ############ OS specific code goes here##############
 
-if platform.system() == 'Windows':
-    gv.nrnscript = ['.\incl\nrn.bat']
-else: ##mac and linux
-    gv.nrnscript = ['./incl/nrn.sh']
-
-
 ############
+try:
+    if not os.path.isdir(os.path.dirname(os.path.realpath(__file__)) + '/logs'):
+        os.mkdir(os.path.dirname(os.path.realpath(__file__)) + '/logs')
+except Exception as ex:
+    print("Error: unable to create logs directory")
+    
 
 ############handle command line args#############
 if len(sys.argv) > 1:
