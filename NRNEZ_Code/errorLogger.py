@@ -1,7 +1,7 @@
 ###################################################################
 ####
-#### Version: 1.1.5
-#### Date: 10/26/2022
+#### Version: 1.1.6
+#### Date: 11/30/2022
 #### Description: This files contains functions for logging, error handling, pickling, and other global functions.
 #### Author: Evan Cobb
 ####

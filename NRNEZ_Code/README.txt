@@ -1,4 +1,7 @@
-10/26/2022 Version 1.1.5:
+11/30/2022 Version 1.1.6
+-Added output file for running neuron simulations in python.
+
+10/26/2022 Version 1.1.5
 -Fixed relative path references to absolutee paths. 
 
 10/10/2022 Version 1.1.4:

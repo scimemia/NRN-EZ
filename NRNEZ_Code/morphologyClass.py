@@ -1,7 +1,7 @@
 ###################################################################
 ####
-#### Version: 1.1.5
-#### Date: 10/26/2022
+#### Version: 1.1.6
+#### Date: 11/30/2022
 #### Description: This file contains the class definitions for the Morphology object, and the nPart object
 #### Author: Evan Cobb
 ####
@@ -307,6 +307,7 @@ class morphologyClass():
             ##copy files
             shutil.copy(gv.incPath + 'headers.hoc', path)
             shutil.copy(gv.incPath + 'mods/netstims.mod', path)
+            shutil.copy(gv.incPath + 'nrnez.py', path)
             files = os.listdir(gv.incPath + 'tmp') 
             for f in files:
                 if(os.path.isfile(gv.incPath + 'tmp/' + f)):

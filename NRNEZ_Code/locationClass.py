@@ -1,7 +1,7 @@
 ###################################################################
 ####
-#### Version: 1.1.5
-#### Date: 10/26/2022
+#### Version: 1.1.6
+#### Date: 11/30/2022
 #### Description: This file contains the class definition for the location object.
 #### Author: Evan Cobb
 ####
