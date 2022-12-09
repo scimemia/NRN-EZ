@@ -32,7 +32,7 @@ NRN-EZ was built with PyInstaller 3.6, and requires the following languages and 
 
 •	PyQtGraph 0.11.0
 
-Installation instructions for Linux (Ubuntu and Pop!_OS): download the Linux zip file and, from the command window, run a bash command for the install.sh file, in the NRNEZ_Installation_Media_Ubuntu folder. 
+Installation instructions for Linux (Ubuntu and Pop!_OS): download the Linux zip file and, from the command window, run a bash command for the install.sh file, in the corresponding installation folder. 
 
 Installation instructions for Mac OS: download the Mac zip file and copy the NRN-EZ app to the Applications folder. 
 
