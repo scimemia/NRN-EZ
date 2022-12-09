@@ -45,7 +45,9 @@ To test NRN-EZ, load the .swc file containing the description of the cell morpho
 **CONTRIBUTORS**
 
 NRN-EZ was created by: Evan A. Cobb (evancbb@gmail.com)
+
 NRN-EZ was tested and validated by: Maurice A. Petroccione (reecepetroccione@gmail.com) 
+
 NRN-EZ was supervised by Annalisa Scimemi (scimemia@gmail.com; ascimemi@albany.edu)
 
 For support and questions, please contact Annalisa Scimemi (scimemia@gmail.com)
