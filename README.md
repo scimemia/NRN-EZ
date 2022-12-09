@@ -54,7 +54,7 @@ NRN-EZ was created by: Evan A. Cobb (evancbb@gmail.com)
 
 NRN-EZ was tested and validated by: Maurice A. Petroccione (reecepetroccione@gmail.com) 
 
-NRN-EZ was supervised by Annalisa Scimemi (scimemia@gmail.com; ascimemi@albany.edu)
+NRN-EZ was supervised by: Annalisa Scimemi (scimemia@gmail.com; ascimemi@albany.edu)
 
 For support and questions, please contact Annalisa Scimemi (scimemia@gmail.com)
 All work was funded by SUNY Albany, SUNY Albany Research Foundation and NSF IOS1655365 and IOS2011998 to A.S.
