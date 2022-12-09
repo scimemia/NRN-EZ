@@ -38,6 +38,11 @@ Installation instructions for Mac OS: download the Mac zip file and, from the co
 
 Installation instructions for Windows: download the Win zip file and double click on the .bat file.
 
+**NOTES FOR LINUX USERS**
+
+
+
+
 **TESTS**
 
 To test NRN-EZ, load the .swc file containing the description of the cell morphology, which is in the Samples folder. Then, fill all fields that describe the spatiotemporal pattern of activation of the synaptic inputs and run the application according to the instructions described in the Instructions folder.
