@@ -38,9 +38,9 @@ Installation instructions for Mac OS: download the Mac zip file and, from the co
 
 Installation instructions for Windows: download the Win zip file and double click on the .bat file.
 
+
 **NOTES FOR LINUX USERS**
-
-
+Users need to run the nrnez.py file to run the NEURON simulations using the Python output of NRN-EZ. This opens the NEURON GUI and imports the simulation settings. This can be done from the shell without using the sudo command if NEURON was installed with the pip command in any location without using sudo. If instead NEURON was installed in a location that required the use of the sudo command, then sudo should also be used to run the nrnez.py file.
 
 
 **TESTS**
