@@ -34,9 +34,9 @@ NRN-EZ was built with PyInstaller 3.6, and requires the following languages and 
 
 Installation instructions for Linux: download the Linux zip file and, from the command window, run a bash command for the install.sh file, in the NRNEZ_Installation_Media_Ubuntu folder. 
 
-Installation instructions for Mac OS: download the Mac zip file and, from the command window, run a bash command for the install.sh file, in the NRNEZ_Installation_Media_Mac folder
+Installation instructions for Mac OS: download the Mac zip file and copy the NRN-EZ app to the Applications folder. 
 
-Installation instructions for Windows: download the Win zip file and double click on the .bat file.
+Installation instructions for Windows: download the Win zip file and run the installation wizard.
 
 
 **NOTES FOR LINUX USERS**
