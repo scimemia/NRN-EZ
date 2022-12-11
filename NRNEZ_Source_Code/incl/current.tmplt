@@ -1,0 +1,70 @@
+//Version: 1.1.6
+objref mloc, mcur, mtime, mcvars
+
+mloc = newMat("./***PATH***/syn_loc.dat")
+mtime = newMat("./***PATH***/syn_time.dat")
+mcur = newMat("./***PATH***/syn_current.dat")
+mcvars = newMat("./***PATH***/vars_current.dat")
+
+nsyn=mloc.nrow
+
+objref stim_//~~~STIMVAR~~~//[nsyn][mcur.ncol]
+
+
+
+for n = 0, nsyn-1 {
+    dist = mloc.x[n][1]
+//~~~SOMA~~~//
+    if (mloc.x[n][0] == 0) {
+       soma[dist] {
+	   
+           for j = 0, mcur.ncol-1 {
+		stim_//~~~STIMVAR~~~//[n][j] = new IClamp(rel)
+		stim_//~~~STIMVAR~~~//[n][j].amp = mcur.x[n][j]
+		stim_//~~~STIMVAR~~~//[n][j].dur = mcvars.x[j][0]
+		stim_//~~~STIMVAR~~~//[n][j].del = mtime.x[n][0]
+		}
+	   }
+   	}
+//~~~SOMA~~~//
+//~~~APICAL~~~//
+    if (mloc.x[n][0] == 3) {
+       apical[dist] {
+	   
+           for j = 0, mcur.ncol-1 {
+		stim_//~~~STIMVAR~~~//[n][j] = new IClamp(rel)
+		stim_//~~~STIMVAR~~~//[n][j].amp = mcur.x[n][j]
+		stim_//~~~STIMVAR~~~//[n][j].dur = mcvars.x[j][0]
+		stim_//~~~STIMVAR~~~//[n][j].del = mtime.x[n][0]
+		}
+	  
+       	   }
+       }
+//~~~APICAL~~~//
+//~~~BASAL~~~//
+    if (mloc.x[n][0] == 2) {
+       basal[dist] {
+
+           for j = 0, mcur.ncol-1 {
+		stim_//~~~STIMVAR~~~//[n][j] = new IClamp(rel)
+		stim_//~~~STIMVAR~~~//[n][j].amp = mcur.x[n][j]
+		stim_//~~~STIMVAR~~~//[n][j].dur = mcvars.x[j][0]
+		stim_//~~~STIMVAR~~~//[n][j].del = mtime.x[n][0]
+		}
+	   }
+       }
+//~~~BASAL~~~//
+//~~~AXON~~~//
+    if (mloc.x[n][0] == 1) {
+       axon[dist] {
+
+           for j = 0, mcur.ncol-1 {
+		stim_//~~~STIMVAR~~~//[n][j] = new IClamp(rel)
+		stim_//~~~STIMVAR~~~//[n][j].amp = mcur.x[n][j]
+		stim_//~~~STIMVAR~~~//[n][j].dur = mcvars.x[j][0]
+		stim_//~~~STIMVAR~~~//[n][j].del = mtime.x[n][0]
+		}
+	   }
+       }
+//~~~AXON~~~//
+}
