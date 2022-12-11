@@ -6,7 +6,7 @@ NRN-EZ is a software that allows to distribute synaptic inputs onto digitally re
 
 **OVERVIEW**
 
-NRN-EZ is an open-source software, able to generate output files that can then be used for running NEURON simulations. It has an intuitive interface that lowers the barrier for running computer simulations, especially in young trainees with minimal programming skills. NRN-EZ is compatible with Linux, Mac OS and Microsoft Windows operating systems. NRN-EZ was built using the Python language and the PyQt and PyQtGraph libraries. Source code and executable, standalone versions of NRN-EZ are available for Linux (Ubuntu and Pop!_OS), Mac OS, and Microsoft Windows platforms.
+NRN-EZ is an open-source software, able to generate output files that can then be used for running NEURON simulations. It has an intuitive interface that lowers the barrier for running computer simulations, especially in young trainees with minimal programming skills. NRN-EZ is compatible with Linux (Ubuntu and Pop!_OS), Mac OS and Microsoft Windows operating systems. NRN-EZ was built using the Python language and the PyQt and PyQtGraph libraries. Source code and executable, standalone versions of NRN-EZ are available for Linux (Ubuntu and Pop!_OS), Mac OS, and Microsoft Windows platforms.
 
 •	Linux (Ubuntu 18.04.5 LTS):
 NRNEZ_Installation_Media_Ubuntu.zip
