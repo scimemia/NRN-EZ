@@ -1,0 +1,9 @@
+To install from source code, ensure you have installed Python3 and the following libraries:
+-PyQt5
+-pyqtgraph 0.11.0
+
+In the command line, run "python3 NRN-EZ.py"
+
+To build installation media, the PyInstaller library is required.
+In the command line, run "pyinstaller NRN-EZ.py"
+*Ensure the "incl" folder is copied to the installation media directory. 
