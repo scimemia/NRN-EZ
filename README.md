@@ -60,6 +60,7 @@ For support and questions, please contact Annalisa Scimemi (scimemia@gmail.com)
 All work was funded by SUNY Albany, SUNY Albany Research Foundation and NSF IOS1655365 and IOS2011998 to A.S.
 
 **HISTORY**
+
 12-2022 – An updated version of NRN-EZ was created by Evan Cobb and tested by Maurice A. Petroccione, as part of a project supervised by Annalisa Scimemi. This version, uploaded on this website, is compatible with Microsoft Windows 10, Mac OS12 and Linux platforms (Ubuntu 18.04.5 LTS and Pop! OS 18.04 LTS). It uses Python 3.6.9 and higher (currently up to 3.10), PyQt 5.10.1 and PyQtGraph 0.11.0. This updated version of NRN-EZ generates .hoc and .py files to run NEURON simulations.
 
 11-2019 – The first version of NRN-EZ was created by Evan Cobb, tested by Maurice A. Petroccione as part of a project supervised by Annalisa Scimemi. This version was compatible with Microsoft Windows 10, Mac OS12 and Linux Ubuntu 22.04 platforms. It used Python 3.6.9, PyQt 5.10.1 and PyQtGraph 0.11.0. This version of NRN-EZ generated .hoc files to run NEURON simulations.
