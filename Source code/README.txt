@@ -1,3 +1,6 @@
+6/24/2023 Version 1.1.7
+-Fixed issue with loading .swc files that contain blank lines. Github Issues #2
+
 11/30/2022 Version 1.1.6
 -Added output file for running neuron simulations in python.
 

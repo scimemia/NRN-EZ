@@ -1,7 +1,7 @@
 ###################################################################
 ####
-#### Version: 1.1.6
-#### Date: 10/26/2022
+#### Version: 1.1.7
+#### Date: 6/24/2023
 #### Description: This file contains the code for the configuration menu of Neuron EZ. The current config menu contains sections for about, reference, and an option to set debug mode.
 #### Author: Evan Cobb
 ####

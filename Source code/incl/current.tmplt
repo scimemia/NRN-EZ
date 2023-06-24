@@ -1,4 +1,4 @@
-//Version: 1.1.6
+//Version: 1.1.7
 objref mloc, mcur, mtime, mcvars
 
 mloc = newMat("./***PATH***/syn_loc.dat")

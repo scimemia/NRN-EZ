@@ -1,7 +1,7 @@
 ###################################################################
 ####
-#### Version: 1.1.6
-#### Date: 11/30/2022
+#### Version: 1.1.7
+#### Date: 6/24/2023
 #### Description: This file contains the class definition of the experiment object
 #### Author: Evan Cobb
 ####

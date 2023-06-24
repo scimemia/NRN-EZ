@@ -1,4 +1,4 @@
-### version 1.1.6 ###
+### version 1.1.7 ###
 import os
 os.system('nrnivmodl')
 from neuron import h, gui

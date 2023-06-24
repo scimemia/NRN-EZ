@@ -1,7 +1,7 @@
 ###################################################################
 ####
-#### Version: 1.1.6
-#### Date: 11/30/2022
+#### Version: 1.1.7
+#### Date: 6/24/2023
 #### Description: This file contains the class definitions for the Morphology object, and the nPart object
 #### Author: Evan Cobb
 ####
@@ -108,7 +108,7 @@ class morphologyClass():
 
         try:
             for line in morph:
-                if line[:1] != '#':
+                if line[:1] != '#' and line.strip() != '':
                     var = line.split()
                     newPart = nPart(int(var[0]), int(var[1]), float(var[2]), float(var[3]), float(var[4]), float(var[5]), int(var[6]))
 
