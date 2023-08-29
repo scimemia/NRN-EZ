@@ -1,5 +1,6 @@
 # NRN-EZ
 Latest release: v1.1.7 (use Latest Release tag on the right side of this page!)
+
 **SYNOPSIS AND MOTIVATION**
 
 NRN-EZ is a software that allows to distribute synaptic inputs onto digitally reconstructed neurons. With NRN-EZ, users can select the location, strength, and activation time of a population of synaptic inputs. These inputs can be in selected sub-cellular compartments, identified by the user or generated through NRN-EZ itself. The location, strength and activation time can be the same for all inputs or vary according to uniform or Poisson distributions. NRN-EZ provides an intuitive graphical user interface to generate code that can then be integrated with other .hoc files, typically used when running multi-compartmental models of synaptic integration and cell excitability using software like NEURON. This framework allows users to test mechanistic hypothesis quickly and accurately for further experimental validation, without necessarily having extensive background in the .hoc programming language.
